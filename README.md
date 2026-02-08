@@ -44,11 +44,26 @@ After my search, I discovered the Outemu GTMX medium-profile switches. They have
 *Figure 2: Cherry MX and Outemu GTMX heights compared*
 </div>
 
-[comment]: <> (TODO: add section with the BOM)
-
-[comment]: <> (TODO: add files  for PCBWAY [and/or AISLER] and Laserboost)
-
 ## How to build your own
+
+### Materials
+To build your own _La Jaderissima_ you'll need the following articles, which can be purchased on AliExpress.
+To find an item on AliExpress, enter the HTML name after `aliexpress.com/item/` in the search bar of any browser.
+
+<div align="center">
+
+|                    Article                   | Quantity |    AliExpress article    |
+|:--------------------------------------------:|:--------:|:------------------------:|
+| Kailh hotswap sockets for Cherry MX switches |    100   | 1005009187522252.html    |
+| 1N4148 diode                                 |    100   | 1005010146177612.html    |
+| Outemu GTMX mechanical switch                |    100   | 1005006959024644.html    |
+| Tecsee V3 stabilizers kit                    |     1    | 1005005320528545.html    |
+| Raspberry Pi Pico with type-C port           |     1    | 1005008948799927.html    |
+
+*Table 1: Purchase list*
+</div>
+
+The switches and stabilizers in the table are specific to a medium-low profile build. Otherwise, any Cherry MX-compatible switches and stabilizers are fine.
 
 ### PCB
 [comment]: <> (TODO: add image of the PCB)
@@ -60,11 +75,10 @@ Along with the PCB, you will need hotswap sockets for MX switches. I chose the K
 
 You will also need diodes to prevent current from flowing in the wrong direction and to avoid unintentional clicks. The specific type of diode required is the 1N4148; these are cheap and easy to obtain.
 
-### Switches
+### Switches and stabilizers
 You can mount any type of mechanical switch as long as it is MX compatible.
-For the stabilizers, you can choose PCB-mounted or plate-mounted ones, as the PCB has holes for them and the plate is designed to hold stabilizers.
-
-[comment]: <> (TODO: add section about stabs)
+If you are using full-height Cherry MX switches, you can buy any PCB-mounted stabilizer you want since there is no height constraint.  
+However, things get difficult when looking for medium-to-low-profile Cherry MX-compatible switches. I bought several stabilizer kits, hoping to find the right height, but ended up using the Tecsee V3 stabilizer kit, which is specifically designed for Tecsee medium-to-low switches and it is also compatible with Outemu GTMX switches.
 
 ### Keycaps
 As long as they use an ANSI layout, you can choose any type of keycap.
@@ -78,7 +92,6 @@ If you have access to a 3D printer with a larger footprint, I included a step fi
 
 Since you are a skilled 3D designer, I also included the CAD file of the keyboard PCB with switches so that you can design your own case with all the features you desire.
 
-[comment]: <> (TODO: add CAD files for the case: split version and integral)
 [comment]: <> (TODO: add image of the 3d printed case)
 
 ### MCU
@@ -86,9 +99,13 @@ I decided to use a Raspberry Pi Pico as the MCU for the mechanical keyboard beca
 While an original RPi Pico is not necessary, as they could be more expensive, any Chinese clone is fine as long as it has the same pinout and an RP2040 MCU.
 
 ### Firmware
-[comment]: <> (TODO: add guide on how to flash the firmware)
 The firmware was developed using QMK, and it can be flashed on an RP2040 MCU. Otherwise, it would not work.
+There are two ways to flash the firmware.
 
+#### Easy route
+The firmware is already compiled and available in the `firmware` folder. To flash it in the RP2040, connect the Raspberry Pi Pico in bootloader mode and copy the file in the folder. It will automatically reboot and be seen as a USB peripheral.
+
+#### Hard route
 To compile and flash the firmware on your La_Jaderissima keyboard, you need to install the QMK environment. The following steps are specifically for a GNU/Linux operating system (OS). If you are using a different OS, you can follow the specific guide on the QMK website.
 
 1. Install the QMK CLI
