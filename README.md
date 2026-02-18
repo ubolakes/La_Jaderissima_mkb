@@ -84,7 +84,7 @@ The following table lists the mechanical switches and stabilizers that I used fo
 ### PCB
 
 <div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
-  <img src="./source/images/pcb-front.png" alt="MX and GTMX heights compared" width="700px">
+  <img src="./source/images/pcb-front.png" alt="Front side of the keyboard PCB" width="700px">
 
 *Figure 3: Front side of the keyboard PCB*
 </div>
@@ -118,7 +118,17 @@ To improve ergonomics, I included the CAD files for different sized feet that ca
 
 [comment]: <> (TODO: add image of the 3d printed case and feet)
 
-[comment]: <> (TODO: add section about the backplate)
+### Backplate
+<div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
+  <img src="./source/images/backplate-left.png" alt="3D render of the backplate" width="700px">
+
+*Figure 4: 3D render of the backplate*
+</div>
+
+The design I imagined required the keyboard to be short and sleek, which led me to use a 1.5 mm thick stainless steel backplate that embraces the bottom case and is secured to it by eight M3 screws.
+
+This piece can be made using online services, which require a STEP file. However, if you choose to rely on a local fabricator, as I did, I have included a DXF file for laser cutting and a PDF showing where to bend the metal sheet (CAD > 2D).
+
 
 ### MCU
 I decided to use a Raspberry Pi Pico as the MCU for the mechanical keyboard because it's inexpensive, can be mounted using connector pins, and has plenty of GPIO to handle the entire keyboard.
