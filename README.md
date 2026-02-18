@@ -2,7 +2,10 @@
 [comment]: <> (Contact: ul2509@gmail.com)
 [comment]: <> (Github:  @ubolakes)
 
+<div align="center">
+
 # :warning: WORK IN PROGRESS :warning:
+</div>
 
 # *La Jaderissima* mechanical keyboard
 [![Apache 2.0 license](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE)
@@ -59,16 +62,34 @@ To find an item on AliExpress, enter the HTML name after `aliexpress.com/item/` 
 | Outemu GTMX mechanical switch                |    100   | 1005006959024644.html    |
 | Tecsee V3 stabilizers kit                    |     1    | 1005005320528545.html    |
 | Raspberry Pi Pico with type-C port           |     1    | 1005008948799927.html    |
+| Low profile ANSI keycaps set                 |     1    | 1005008237946422.html    |
 
 *Table 1: Purchase list*
 </div>
 
 The switches and stabilizers in the table are specific to a medium-low profile build. Otherwise, any Cherry MX-compatible switches and stabilizers are fine.
 
-### PCB
-[comment]: <> (TODO: add image of the PCB)
+The following table lists the mechanical switches and stabilizers that I used for the second La Jaderissima that I built.
 
-You can build a PCB yourself using the files in the .zip folder, which contains everything the fabricator needs.
+<div align="center">
+
+|                    Article                 | Quantity |    AliExpress article    |
+|:------------------------------------------:|:--------:|:------------------------:|
+| Epomaker Wisteria linear mechanical switch |    100   | 1005005363024093.html    |
+| Cherry MX compatible stabilizers kit       |     1    | 1005001686299616.html    |
+
+*Table 2: Alternative Cherry MX switches and stabilizers*
+</div>
+
+### PCB
+
+<div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
+  <img src="./source/images/pcb-front.png" alt="MX and GTMX heights compared" width="700px">
+
+*Figure 3: Front side of the keyboard PCB*
+</div>
+
+You can build a PCB yourself (and it must be red!!) using the files in the .zip folder, which contains everything the fabricator needs.
 You can choose any fabricator, since most of them accept source files exported from KiCAD.
 
 Along with the PCB, you will need hotswap sockets for MX switches. I chose the Kailh ones, but I think these are pretty much standardised.
@@ -77,7 +98,8 @@ You will also need diodes to prevent current from flowing in the wrong direction
 
 ### Switches and stabilizers
 You can mount any type of mechanical switch as long as it is MX compatible.
-If you are using full-height Cherry MX switches, you can buy any PCB-mounted stabilizer you want since there is no height constraint.  
+If you are using full-height Cherry MX switches, you can buy any PCB-mounted stabilizer you want since there is no height constraint.
+
 However, things get difficult when looking for medium-to-low-profile Cherry MX-compatible switches. I bought several stabilizer kits, hoping to find the right height, but ended up using the Tecsee V3 stabilizer kit, which is specifically designed for Tecsee medium-to-low switches and it is also compatible with Outemu GTMX switches.
 
 ### Keycaps
@@ -92,7 +114,11 @@ If you have access to a 3D printer with a larger footprint, I included a step fi
 
 Since you are a skilled 3D designer, I also included the CAD file of the keyboard PCB with switches so that you can design your own case with all the features you desire.
 
-[comment]: <> (TODO: add image of the 3d printed case)
+To improve ergonomics, I included the CAD files for different sized feet that can be added to the keyboard to create an angle and provide a better typing experience for your wrists.
+
+[comment]: <> (TODO: add image of the 3d printed case and feet)
+
+[comment]: <> (TODO: add section about the backplate)
 
 ### MCU
 I decided to use a Raspberry Pi Pico as the MCU for the mechanical keyboard because it's inexpensive, can be mounted using connector pins, and has plenty of GPIO to handle the entire keyboard.
