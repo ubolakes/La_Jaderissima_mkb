@@ -32,8 +32,6 @@ The feature I desire most in a keyboard is a thin design that reduces wrist fati
 
 To achieve this, my friend and colleague, Biagio, designed a bent sheet metal backplate and a 3D-printable bottom case in order to reduce costs and make the keyboard lighter. Biagio also designed 3D-printable feet to angle the keyboard and improve ergonomics.
 
-[comment]: <> (TODO: add render of the two case pieces from CAD)
-
 ## Keyswitch
 Another design choice that makes the keyboard thinner is the use of low-profile switches. It was difficult to choose the most suitable keyswitch.
 
@@ -112,17 +110,21 @@ Since I used a standard 3D printer, I had to split the case into two parts to fi
 
 If you have access to a 3D printer with a larger footprint, I included a step file so you can print the case in one piece and avoid using plugs.
 
+<div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
+  <img src="./source/images/keyboard-case.png" alt="Mechanical keyboard bottom case" width="600px">
+
+*Figure 4: Mechanical keyboard bottom case*
+</div>
+
 Since you are a skilled 3D designer, I also included the CAD file of the keyboard PCB with switches so that you can design your own case with all the features you desire.
 
 To improve ergonomics, I included the CAD files for different sized feet that can be added to the keyboard to create an angle and provide a better typing experience for your wrists.
-
-[comment]: <> (TODO: add image of the 3d printed case and feet)
 
 ### Backplate
 <div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
   <img src="./source/images/backplate-left.png" alt="3D render of the backplate" width="700px">
 
-*Figure 4: 3D render of the backplate*
+*Figure 5: 3D render of the backplate*
 </div>
 
 The design I imagined required the keyboard to be short and sleek, which led me to use a 1.5 mm thick stainless steel backplate that embraces the bottom case and is secured to it by eight M3 screws.
