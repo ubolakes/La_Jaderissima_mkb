@@ -2,11 +2,6 @@
 [comment]: <> (Contact: ul2509@gmail.com)
 [comment]: <> (Github:  @ubolakes)
 
-<div align="center">
-
-# :warning: WORK IN PROGRESS :warning:
-</div>
-
 # *La Jaderissima* mechanical keyboard
 [![Apache 2.0 license](https://img.shields.io/badge/license-Apache%202-blue)](LICENSE)
 
