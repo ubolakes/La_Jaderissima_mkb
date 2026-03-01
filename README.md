@@ -8,6 +8,12 @@
 *La Jaderissima* is an open source mechanical keyboard designed with the intent to learn how to design a PCB.  
 The repository contains all the materials necessary to build your own *La Jaderissima* at home.
 
+<div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
+  <img src="./source/images/la-jaderissima-prototype.jpg" alt="The first prototype of La Jaderissima" width="700px">
+
+*Figure 1: The first prototype of La Jaderissima*
+</div>
+
 Before introducing the project in more detail, I'd like to thank my friend and colleague, Biagio M., who designed the keyboard case using a 3D CAD software. Without him, I wouldn't have been able to make it.  
 He also made the design as thin as possible due to my childish complaints about wanting the keyboard to be as close to the desk as possible.
 
@@ -19,7 +25,7 @@ The keyboard is designed with a 96% ANSI layout to provide all the necessary key
 <div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
   <img src="./source/images/keyboard-layout.jpg" alt="Keyboard layout" width="700px">
 
-*Figure 1: Mechanical keyboard layout*
+*Figure 2: Mechanical keyboard layout*
 </div>
 
 ## Case design
@@ -37,7 +43,7 @@ After my search, I discovered the Outemu GTMX medium-profile switches. They have
 <div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
   <img src="./source/images/MX-vs-GTMX.png" alt="MX and GTMX heights compared" width="300px">
 
-*Figure 2: Cherry MX and Outemu GTMX heights compared*
+*Figure 3: Cherry MX and Outemu GTMX heights compared*
 </div>
 
 ## How to build your own
@@ -79,7 +85,7 @@ The following table lists the mechanical switches and stabilizers that I used fo
 <div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
   <img src="./source/images/pcb-front.png" alt="Front side of the keyboard PCB" width="700px">
 
-*Figure 3: Front side of the keyboard PCB*
+*Figure 4: Front side of the keyboard PCB*
 </div>
 
 You can build a PCB yourself (and it must be red!!) using the files in the .zip folder, which contains everything the fabricator needs.
@@ -108,7 +114,7 @@ If you have access to a 3D printer with a larger footprint, I included a step fi
 <div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
   <img src="./source/images/keyboard-case.png" alt="Mechanical keyboard bottom case" width="600px">
 
-*Figure 4: Mechanical keyboard bottom case*
+*Figure 5: Mechanical keyboard bottom case*
 </div>
 
 Since you are a skilled 3D designer, I also included the CAD file of the keyboard PCB with switches so that you can design your own case with all the features you desire.
@@ -119,7 +125,7 @@ To improve ergonomics, I included the CAD files for different sized feet that ca
 <div align="center" style="text-align: center; margin-left: auto; margin-right: auto;">
   <img src="./source/images/backplate-left.png" alt="3D render of the backplate" width="700px">
 
-*Figure 5: 3D render of the backplate*
+*Figure 6: 3D render of the backplate*
 </div>
 
 The design I imagined required the keyboard to be short and sleek, which led me to use a 1.5 mm thick stainless steel backplate that embraces the bottom case and is secured to it by eight M3 screws.
